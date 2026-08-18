@@ -17,4 +17,8 @@ class BasePage:
     def click(self, locator):
       element = WebDriverWait(self.driver, self.timeout).until(EC.element_to_be_clickable(locator))
       element.click()
-      
+    
+
+    def open(self, url):
+      self.driver.get(url)
+    
