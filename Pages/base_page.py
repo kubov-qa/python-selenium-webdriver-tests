@@ -24,5 +24,9 @@ class BasePage:
     def text(self, locator):
       element = self.find(locator)
       return element.text
-    
 
+    
+    def type_text(self, locator, text):
+      element = WebDriverWait(self.driver, self.timeout).until(EC.element_to_be_clickable(locator))
+      element.clear()
+      element.send_keys(text)
