@@ -1,6 +1,5 @@
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-from selenium.webdriver.common.by import By
 
 class BasePage:
     
@@ -21,4 +20,9 @@ class BasePage:
 
     def open(self, url):
       self.driver.get(url)
+
+    def text(self, locator):
+      element = self.find(locator)
+      return element.text
     
+
