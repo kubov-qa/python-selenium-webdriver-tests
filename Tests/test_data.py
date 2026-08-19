@@ -4,4 +4,7 @@ PROBLEM_USERNAME = "problem_user"
 PERFORMANCE_GLITCH_USERNAME = "performance_glitch_user"
 ERROR_USERNAME = "error_user"
 VISUAL_USERNAME = "visual_user"
+
 VALID_PASSWORD = "secret_sauce"
+
+BASE_URL = "https://www.saucedemo.com"
