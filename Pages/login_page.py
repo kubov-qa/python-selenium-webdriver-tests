@@ -11,3 +11,4 @@ class LoginPage(BasePage):
         self.type_text(self.PASSWORD_INPUT, password)
         self.click(self.LOGIN_BUTTON)
 
+
